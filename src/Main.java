@@ -1,15 +1,21 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Trojmian t1 = new Trojmian(1,0,1);
+        Trojmian t2 = new Trojmian(1,-2,1);
+        Trojmian t3 = new Trojmian(1,0,-1);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+
+        System.out.println(t1);
+        System.out.println(t1.delta());
+        System.out.println(t1.ileRozwiazan());
+
+        System.out.println(t2);
+        System.out.println(t2.delta());
+        System.out.println(t2.ileRozwiazan());
+
+        System.out.println(t3);
+        System.out.println(t3.delta());
+        System.out.println(t3.ileRozwiazan());
+
     }
 }
